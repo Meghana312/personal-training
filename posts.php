@@ -1,14 +1,14 @@
 <?php
-if(isset($_POST['submit'])){
+if(isset($_GET['submit'])){
     $to = "meghanar3122001@gmail.com";
 
 
 
-    $name = $_POST['name_contact'];
-    $email= $_POST['email_contact'];
-    $phone= $_POST['phone_contact'];
-    $subject= $_POST['subject_contact'];
-    $body= $_POST['message_contact'];
+    $name = $_GET['name_contact'];
+    $email= $_GET['email_contact'];
+    $phone= $_GET['phone_contact'];
+    $subject= $_GET['subject_contact'];
+    $body= $_GET['message_contact'];
     $headers = 'From: '.$email . "\r\n";
 
 
